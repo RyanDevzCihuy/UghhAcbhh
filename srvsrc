@@ -1,2 +1,4 @@
 echo "server Available!"
-bash /data/data/com.termux/files/home/RyPX/bin/main 1
+cd bin
+bash main 1
+cd ..
