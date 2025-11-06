@@ -1,4 +1,4 @@
 echo "server Available!"
 cd bin
-bash main 1
+bash main apalahkamutaktau
 cd ..
