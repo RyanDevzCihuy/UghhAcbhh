@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# Fungsi: Menampilkan Tampilan Menu yang Rapi
+tampilkan_menu() {
+    clear # Bersihkan terminal untuk tampilan yang rapi
+    echo " "
+    echo "=========================================="
+    echo "          🚀 Main Menu 🚀      "
+    echo "=========================================="
+    echo " "
+    echo "  [1] Start Install Now                          "
+    echo "  [2] Setting Menu                       "
+    echo "  [3] Redeem Menu                        "
+    echo "  [4] Exit                               "
+    echo " "
+    echo "------------------------------------------"
+}
+
+# --- Main Loop ---
+# Program akan terus berputar di sini sampai pengguna memilih '4' (Exit)
+while true
+do
+    tampilkan_menu # 1. Tampilkan menu
+
+    echo -n "🔑 Please type the numbers (1-4) and press ENTER: "
+    read PILIHAN # 2. Ambil input pengguna
+
+    # 3. Kontrol Alur dengan CASE
+    case $PILIHAN in
+        1)
+            echo "--- choose option: 1 ---"
+            bash /data/data/com.termux/files/home/RyPX/bin main mulaisaja
+            read enter
+            ;;
+        2)
+            echo "--- choose option: 2 ---"
+            bash /data/data/com.termux/files/home/RyPX/bin main setmenu2
+            echo "--- Done. Enter for back to menu ---"
+            read enter
+            ;;
+        3)
+            echo "--- choose option: 3  ---"
+            bash /data/data/com.termux/files/home/RyPX/bin main redeemmenu2
+            echo "--- Done. Enter for back to menu ---"
+            read enter
+            ;;
+        4)
+            echo " "
+            echo "👋 Quit... Goodbye!"
+            exit 0 # Perintah: exit
+            ;;
+        *)
+            # Menangani input yang tidak valid
+            echo " "
+            echo "❌ Warning: invalid input '$PILIHAN'."
+            echo "make sure your numbers match the menu"
+            echo "Enter for back to menu..."
+            read enter
+            ;;
+    esac
+done
