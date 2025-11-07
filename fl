@@ -1,2 +1,6 @@
-echo "loaded success!"
-sleep 2.0
+echo "service connect!"
+echo "Welcome To RyProjex 1.0!"
+echo "note: this is installer!"
+echo "Don't forget to report bugs to our official website! Your reports are valuable to you!"
+echo "build: 2025-7-11"
+sleep 3.0
