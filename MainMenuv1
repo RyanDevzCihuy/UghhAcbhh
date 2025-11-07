@@ -8,7 +8,7 @@ tampilkan_menu() {
     echo "          🚀 Main Menu 🚀      "
     echo "=========================================="
     echo " "
-    echo "  [1] Start Install Now                          "
+    echo "  [1] Start Install Now                  "
     echo "  [2] Setting Menu                       "
     echo "  [3] Redeem Menu                        "
     echo "  [4] Exit                               "
