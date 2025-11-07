@@ -45,7 +45,6 @@ do
         3)
             echo "--- choose option: 3  ---"
             bash /data/data/com.termux/files/home/RyPX/bin/main redeemmenu2
-            echo "--- Done. Enter for back to menu ---"
             # PERUBAHAN: Membaca input dari /dev/tty (terminal)
             read enter </dev/tty
             ;;
