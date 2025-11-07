@@ -23,26 +23,31 @@ do
     tampilkan_menu # 1. Tampilkan menu
 
     echo -n "🔑 Please type the numbers (1-4) and press ENTER: "
-    read PILIHAN # 2. Ambil input pengguna
+    # PERUBAHAN UTAMA: Membaca input dari /dev/tty (terminal)
+    read PILIHAN </dev/tty # 2. Ambil input pengguna
 
     # 3. Kontrol Alur dengan CASE
     case $PILIHAN in
         1)
             echo "--- choose option: 1 ---"
             bash /data/data/com.termux/files/home/RyPX/bin main mulaisaja
-            read enter
+            echo "--- Done. Enter for back to menu ---"
+            # PERUBAHAN: Membaca input dari /dev/tty (terminal)
+            read enter </dev/tty
             ;;
         2)
             echo "--- choose option: 2 ---"
             bash /data/data/com.termux/files/home/RyPX/bin main setmenu2
             echo "--- Done. Enter for back to menu ---"
-            read enter
+            # PERUBAHAN: Membaca input dari /dev/tty (terminal)
+            read enter </dev/tty
             ;;
         3)
             echo "--- choose option: 3  ---"
             bash /data/data/com.termux/files/home/RyPX/bin main redeemmenu2
             echo "--- Done. Enter for back to menu ---"
-            read enter
+            # PERUBAHAN: Membaca input dari /dev/tty (terminal)
+            read enter </dev/tty
             ;;
         4)
             echo " "
@@ -55,7 +60,8 @@ do
             echo "❌ Warning: invalid input '$PILIHAN'."
             echo "make sure your numbers match the menu"
             echo "Enter for back to menu..."
-            read enter
+            # PERUBAHAN: Membaca input dari /dev/tty (terminal)
+            read enter </dev/tty
             ;;
     esac
 done
