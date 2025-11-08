@@ -1,5 +1,4 @@
 echo "service connect!"
-exit 1
 echo "Welcome To RyProjex 1.0!"
 echo "note: this is installer!"
 echo "Don't forget to report bugs to our official website! Your reports are valuable to you!"
@@ -7,3 +6,4 @@ echo "build: 2025-7-11"
 echo -n "Enter for continue, only support on termux if you other terminal exit now or make fatal your terminal!"
 read go </dev/tty 
 sleep 5.0
+exit 1
