@@ -1,4 +1,6 @@
 echo "service connect!"
+sleep 1.0
+clear
 echo "Welcome To RyProjex 1.0!"
 echo "note: this is installer!"
 echo "Don't forget to report bugs to our official website! Your reports are valuable to you!"
