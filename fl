@@ -49,7 +49,7 @@ while true; do
     echo  "  [ ${YELLOW}Exit${NC} ] : Abort installation and exit."
 
     echo "\n${RED}I have read and agree to the RyLicense:${NC}"
-    read -r -p "Pilihan (Y/Check/Exit): " CHOICE
+    read -r -p "Pilihan (Y/Check/Exit): " CHOICE </dev/tty
 
     CHOICE=$(echo "$CHOICE" | tr '[:lower:]' '[:upper:]') # Konversi ke huruf kapital
 
@@ -72,7 +72,6 @@ while true; do
         *)
             echo  "\n[ERROR] invalid input!"
             sleep 1.5
-            clear
             ;;
     esac
 done
