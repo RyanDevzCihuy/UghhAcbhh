@@ -67,7 +67,7 @@ while true; do
             ;;
         EXIT)
             echo  "\n[INFO] Installation aborted. Thank you for your interest in RyPX."
-
+            exit 5
             ;;
         *)
             echo  "\n[ERROR] invalid input!"
