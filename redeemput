@@ -1,0 +1,27 @@
+clear
+        tampilan_menu() {
+        echo "Redeem Code version 1.0"
+        echo "type exit for back to redeem menu!"
+        }
+    tampilan_menu
+      while true
+      do
+    # 1. Tampilkan menu
+
+    echo -n "Code Redeem: "
+    # PERUBAHAN UTAMA: Membaca input dari /dev/tty (terminal)
+    read PILIHAN </dev/tty # 2. Ambil input pengguna
+
+    # 3. Kontrol Alur dengan CASE
+    case $PILIHAN in
+        "exit")
+            exit 0
+            ;;
+        "1")
+            echo "ryan ganteng"
+            ;;
+        *)
+            echo "❌ Warning: invalid redeeming '$PILIHAN'."
+            ;;
+    esac
+done
