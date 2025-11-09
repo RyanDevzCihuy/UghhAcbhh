@@ -3,7 +3,7 @@ sleep 1.0
 clear
 echo "Welcome To RyProjex 1.0!"
 echo "note: this is installer!"
-echo "Don't forget to report bugs to our official website! Your reports are valuable to you!"
+echo "Don't forget to report bugs to our official website! Your reports are valuable to project!"
 echo "build: 2025-7-11"
 echo ""
 echo -n "ENTER for continue, This script only supports Termux, make sure your terminal is Termux so that it doesn't cause fatal errors in the script."
