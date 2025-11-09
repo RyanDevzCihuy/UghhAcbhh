@@ -1,12 +1,78 @@
-echo "service connect!"
+#!/bin/bash
+
+# --- Variabel Warna (RyLib Awal) ---
+# Definisi warna dasar untuk estetika Termux
+GREEN="\033[0;32m"
+YELLOW="\033[0;33m"
+RED="\033[0;31m"
+BLUE="\033[0;34m"
+NC="\033[0m" # No Color
+
+# --- Variabel Penting ---
+RY_LICENSE_URL="https://github.com/BluePlayzgoStudio/RanyangProjectXBeta/wiki/RyLicense"
+# Pastikan ini adalah link Lisensi yang benar!
+
+# =========================================================================
+# BAGIAN 1: Welcome Screen & System Greeting
+# =========================================================================
+
+clear                                                                                                                                                                            echo  "${GREEN}===========================================${NC}"
+echo  "${YELLOW}🚀 WELCOME TO RyPX (Ranyang Project X) 1.0${NC}"
+echo  "${GREEN}===========================================${NC}"
+echo " "
+echo  "[BUILD INFO] Core Installer v2025-7-11"
+echo  "[SYSTEM NOTE] This installer is designed exclusively for ${BLUE}Termux${NC} environment."
+echo " "
+echo "-------------------------------------------"
+echo  "Your bug reports are ${YELLOW}VALUABLE${NC} to the project's security and stability!"
+echo "-------------------------------------------"
+
+# Simulasi koneksi dan inisialisasi awal
+echo  "\n[RyPX Installer] Connecting to service..."
 sleep 1.0
-clear
-echo "Welcome To RyProjex 1.0!"
-echo "note: this is installer from default termux repository, please place the RyPX folder in $home!"
-echo "Don't forget to report bugs to our official website! Your reports are valuable to project!"
-echo "build: 2025-7-11"
-echo ""
-echo -n "ENTER for continue, This script only supports Termux, make sure your terminal is Termux so that it doesn't cause fatal errors in the script."
-read go </dev/tty 
-sleep 5.0
-exit 1
+echo  "[RyPX Installer] Environment check initiated..."
+sleep 0.5
+
+# =========================================================================
+# BAGIAN 2: RyLicense Acceptance Menu
+# =========================================================================
+
+while true; do
+    echo  "\n${BLUE}===================================================${NC}"
+    echo  "${YELLOW}MANDATORY: RyLicense (End-User License Agreement)${NC}"
+    echo  "${BLUE}===================================================${NC}"
+    echo  "Before installation, you ${RED}MUST${NC} explicitly agree to the RyLicense."
+
+    echo  "\n${GREEN}Pilihan Anda:${NC}"
+    echo  "  [ ${YELLOW}Y${NC} ]  : ${GREEN}AGREE${NC} to RyLicense and ${YELLOW}PROCEED${NC} with installation."
+    echo  "  [ ${YELLOW}Check${NC} ]: Open the full RyLicense text in your browser."
+    echo  "  [ ${YELLOW}Exit${NC} ] : Abort installation and exit."
+
+    echo "\n${RED}I have read and agree to the RyLicense:${NC}"
+    read -r -p "Pilihan (Y/Check/Exit): " CHOICE
+
+    CHOICE=$(echo "$CHOICE" | tr '[:lower:]' '[:upper:]') # Konversi ke huruf kapital
+
+    case "$CHOICE" in
+        Y)
+            echo  "\n[SUCCESS] RyLicense accepted. Proceeding to system validation..."
+            # Lanjut ke langkah selanjutnya (e.g., pengecekan RyBase, instalasi)
+            break
+            ;;
+        CHECK)
+            echo  "\n[INFO] Opening full RyLicense: ${BLUE}$RY_LICENSE_URL${NC}"
+            # Perintah untuk membuka link di Termux
+            termux-open-url "$RY_LICENSE_URL" &> /dev/null
+            sleep 3.0
+            ;;
+        EXIT)
+            echo  "\n[INFO] Installation aborted. Thank you for your interest in RyPX."
+
+            ;;
+        *)
+            echo  "\n[ERROR] invalid input!"
+            sleep 1.5
+            clear
+            ;;
+    esac
+done
