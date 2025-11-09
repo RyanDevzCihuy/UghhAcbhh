@@ -2,7 +2,7 @@
 
 # Fungsi: Menampilkan Tampilan Menu yang Rapi
 tampilkan_menu() {
-    clear # Bersihkan terminal untuk tampilan yang rapi
+    clear -x # Bersihkan terminal untuk tampilan yang rapi
     echo " "
     echo "=========================================="
     echo "          🚀 Main Menu 🚀      "
