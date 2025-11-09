@@ -16,7 +16,7 @@ RY_LICENSE_URL="https://github.com/BluePlayzgoStudio/RanyangProjectXBeta/wiki/Ry
 # BAGIAN 1: Welcome Screen & System Greeting
 # =========================================================================
 
-clear                                                                                                                                                                            echo  "${GREEN}===========================================${NC}"
+clear -x                                                                                                                                                                            echo  "${GREEN}===========================================${NC}"
 echo  "${YELLOW}🚀 WELCOME TO RyPX (Ranyang Project X) 1.0${NC}"
 echo  "${GREEN}===========================================${NC}"
 echo " "
