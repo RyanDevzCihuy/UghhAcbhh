@@ -7,6 +7,7 @@ YELLOW="\033[0;33m"
 RED="\033[0;31m"
 BLUE="\033[0;34m"
 NC="\033[0m" # No Color
+clear -x
 
 # --- Variabel Penting ---
 RY_LICENSE_URL="https://github.com/BluePlayzgoStudio/RanyangProjectXBeta/wiki/RyLicense"
@@ -16,7 +17,8 @@ RY_LICENSE_URL="https://github.com/BluePlayzgoStudio/RanyangProjectXBeta/wiki/Ry
 # BAGIAN 1: Welcome Screen & System Greeting
 # =========================================================================
 
-clear -x                                                                                                                                                                            echo  "${GREEN}===========================================${NC}"
+                                                                                                                                                                            
+echo  "${GREEN}===========================================${NC}"
 echo  "${YELLOW}🚀 WELCOME TO RyPX (Ranyang Project X) 1.0${NC}"
 echo  "${GREEN}===========================================${NC}"
 echo " "
