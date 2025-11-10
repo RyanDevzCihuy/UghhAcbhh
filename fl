@@ -43,7 +43,7 @@ while true; do
     echo  "${BLUE}===================================================${NC}"
     echo  "Before installation, you ${RED}MUST${NC} explicitly agree to the RyLicense."
 
-    echo  "\n${GREEN}Pilihan Anda:${NC}"
+    echo  "\n${GREEN}your choice:${NC}"
     echo  "  [ ${YELLOW}Y${NC} ]  : ${GREEN}AGREE${NC} to RyLicense and ${YELLOW}PROCEED${NC} with installation."
     echo  "  [ ${YELLOW}Check${NC} ]: Open the full RyLicense text in your browser."
     echo  "  [ ${YELLOW}Exit${NC} ] : Abort installation and exit."
