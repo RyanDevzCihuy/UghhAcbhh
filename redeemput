@@ -17,8 +17,8 @@ clear
         "exit")
             exit 0
             ;;
-        "1")
-            echo "ryan ganteng"
+        "test")
+            echo "Can't apply testing version!"
             ;;
         *)
             echo "❌ Warning: invalid redeeming '$PILIHAN'."
