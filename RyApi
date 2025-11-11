@@ -1,0 +1,8 @@
+            echo "Starting installing..."
+            echo "please do not exit the terminal or force stop the script while still running installing"
+            sleep 2.0
+            mv /data/data/com.termux/files/home/RyPX/RyPXManePack/RyBase /data/data/com.termux/files/usr/etc/RyBase
+            mv /data/data/com.termux/files/home/RyPX/RyPXManePack/RyFile /data/data/com.termux/files/usr
+            chmod a+x /data/data/com.termux/files/home/RyPX/RyPXManePack/Ry
+            mv /data/data/com.termux/files/home/RyPX/RyPXManePack/Ry /data/data/com.termux/files/usr/bin
+            rm -rf /data/data/com.termux/files/home/RyPX/RyPXManePack
